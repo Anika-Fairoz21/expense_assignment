@@ -1,0 +1,29 @@
+# authendication credintials
+credentials:
+  usernames:
+    anika:
+      email: anikafairoz21@gmail.com
+      name: Anika Fairoz
+      password: $2b$12$.EnzAfdol9aHXMRS1PJkdOiZLbvfLQxhqwcN5Qkwv6iy/hYfhlOya
+ 
+cookie:
+  expiry_days: 15
+  key: some_signature_key # Must be string
+  name: some_cookie_name
+preauthorized:
+  emails:
+  - anikafairoz21@gmail.com
+
+
+
+db:
+  host: "127.0.0.1"
+  user: "root"
+  passwd: "12345@Anika"
+  database: "expenses"
+  auth_plugin: "mysql_native_password"
+
+  
+email_sender:
+  email: "anikafairoz21@gmail.com"
+  pass: '12345'
