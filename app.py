@@ -2,7 +2,9 @@ import streamlit as st
 from PIL import Image
 from utility import login
 from src.db_connection import get_database_connection
+
 from src.expense_op import save_expense
+from src.insert import parameter_listing
 
 # Load images
 logo_image = Image.open("img/company_logo.png")
@@ -55,10 +57,11 @@ def menu():
              pass
             # reporting()
         elif task == 'Parameter Insertion':
-             pass
-            # parameter_listing()
+            cursor, db = get_database_connection()
+   #        cursor1, db1= get_database_connection1()
+            parameter_listing(cursor, db)
 
-
+#Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypasspip install -r requirements.txt
 
 @login
 def main():
